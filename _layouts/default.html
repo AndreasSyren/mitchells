@@ -6,11 +6,28 @@
   <body>
 
     {% include header.html %}
-
+	{% if page.path contains '_posts' %}
+	<div class="row">
+      <div class="medium-12 columns">{{ content }}</div>
+    </div>
+	{% else %}
+	<div class="full-width">
+  		<div class="row">
+    		<div class="large-8  large-offset-3 columns">
+	    		<div class="marketing">
+	    			<div class="tagline">
+		      			<h1>Välkommen</h1>
+		      			<h4>Skicka ett email om du har några frågor eller vill beställa våra kvalitetsvaror {{ site.email }}</h2>
+		      			<p>{{ site.description }}</p>
+	    			</div>
+	    		</div>
+    		</div>
+  		</div>
+	</div>
     <div class="row">
       <div class="medium-12 columns">{{ content }}</div>
     </div>
-
+	{% endif %}
 
     {% include footer.html %}
 

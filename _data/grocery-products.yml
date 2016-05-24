@@ -1,0 +1,39 @@
+- name: Apple Jelly
+  weight: 450 g
+  number: 1
+  pack: 12
+
+- name: Apple Jelly Junior
+  weight: 200 g
+  number: 2
+  pack: 12
+
+- name: Apricot Jam
+  weight: 450 g
+  number: 3
+  pack: 12
+
+- name: Black Currant Jam
+  weight: 450 g
+  number: 4
+  pack: 12
+
+- name: Chocolate Spread
+  weight: 375 g
+  number: 5
+  pack: 12
+
+- name: Golden Apple Jam
+  weight: 450 g
+  number: 6
+  pack: 12
+
+- name: Golden Apple Jam Junior
+  weight: 200 g
+  number: 7
+  pack: 12
+
+- name: Golden Apple Jam Junior
+  weight: 200 g
+  number: 8
+  pack: 12

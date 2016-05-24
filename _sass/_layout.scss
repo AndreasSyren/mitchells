@@ -1,11 +1,12 @@
 $font: Open Sans;
+$font-title: Damion;
 $nav-color: #000;
 $hover-link-color: #457f8d;
 $secondary-font-color: #707070;
 
-$accent-color-1: #ebebeb;
-$accent-color-2: #ccd8db;
-$footer-color: #c6c6c6;
+$accent-color-1: #F36F57;
+$accent-color-2: #B5D4AC;
+$footer-color: #B5D4AC;
 
 $main-title-size: 2.2em;
 $main-title-leading: 1em;
@@ -19,7 +20,10 @@ $sections-margin: 50px;
 * {
   font-family: $font, sans-serif;
 }
-
+h2 .site-title {
+  font-family: $font-title, cursive;
+  color: $accent-color-2;
+}
 a {
   text-decoration: none;
   color: $nav-color;
@@ -32,11 +36,12 @@ p {
   font-size: $paragraph-size;
 }
 header {
-  padding: 50px 0;
+  padding: 20px 0;
 
 }
 nav {
   float: right;
+  padding-top: 1.8rem;
   a {
     margin-right: 30px;
   }
@@ -52,8 +57,8 @@ nav {
 }
 .main-post {
   display: block;
-  background: $accent-color-1;
-  border: 3px solid $accent-color-2;
+  //background: $accent-color-1;
+  //border: 3px solid $accent-color-2;
     span {
       margin-left: $main-padding;
       color: $secondary-font-color;
@@ -68,6 +73,7 @@ nav {
   }
 }
 a.main-post-title {
+  font-family: $font-title, cursive;
   font-size: $main-title-size;
   padding: $main-padding $main-padding 0 $main-padding;
   display: block;
@@ -137,6 +143,18 @@ img#main-img {
 }
 .post-meta {
   margin-top: 0;
+}
+.full-width {
+  background: url(/images/background_vegetables.jpeg);
+  background-size: cover;
+  background-color: tomato;
+  padding-top: 180px;
+  padding-bottom: 250px;
+  margin: 0 0 4.5rem;
+  color: rgb(255, 255, 255);
+  h1 {
+        font-family: $font-title, cursive;
+  }
 }
 @media only screen and (max-width: 64.064em) {
   .main-post-title, a.sub-post-title {

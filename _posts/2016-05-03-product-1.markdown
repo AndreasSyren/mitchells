@@ -1,26 +1,15 @@
 ---
 layout: post
-title:  "Product 1"
+title:  "Livsmedel"
 date:   2016-05-04 23:03:14 +0200
-categories: product
+category: product-grocery
 thumb: product1.jpg
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+Mitchell's ensures that you enjoy the delicate taste and flavour of the finest fruits of nature the whole year round with its Jam, Jellies and Marmalade. No artificial colour and no artificial flavour is our motto! Therefore, our range of fruit preserves is made from the finest, most delicious, sun soaked, freshly plucked apples, apricots, cherries, guavas, mangoes, pineapples, raspberries, strawberries and black currant. Processed under strict hygienic conditions and according to recipes perfected by experts over decades - Mitchell's products retain the natural aroma, flavour and taste of fruits and preserve the best in nature. With MITCHELL'S you get much more - both in quality and in quantity!

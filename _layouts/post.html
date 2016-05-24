@@ -2,14 +2,42 @@
 layout: default
 ---
 <div class="row">
-  <div class="medium-12">
+  <div class="medium-12 columns">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-      <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-      <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+      <h2 class="post-title" itemprop="name headline">{{ page.title }}</h1>
       <div class="post-content" itemprop="articleBody">
       <img src="/images/{{ page.thumb }}" alt="Page" id="main-img" />
       {{ content }}
       </div>
+      <table>
+        <thead>
+            <tr>
+              <th>Nr</th>
+              <th>Product</th>
+              <th>Weight</th>
+              <th>Packs</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for grocery-product in site.data.grocery-products %}
+          <tr> 
+            <td>{{ grocery-product.number }}</td>
+            <td>{{ grocery-product.name }}</td>
+            <td>{{ grocery-product.weight }}</td>
+            <td>{{ grocery-product.pack }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <ul>
+{% for member in site.data.members %}
+  <li>
+    <a href="https://github.com/{{ member.github }}">
+      {{ member.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
     </article>
   </div>
 </div>
